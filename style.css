@@ -22,6 +22,13 @@ a:hover {
     transition: 1s;
 }
 
+.info {
+    height:120px;
+    border-radius:100px;
+    padding: 4px;
+    box-shadow:-5px 5px rgba(24, 78, 119, 0.8);
+}
+
 header {
     grid-area: header;
     font-family: "Lilita One", sans-serif;
@@ -33,18 +40,12 @@ header {
     font-size: 95px;
     line-height: 50px;
     align-content:space-evenly;
+    background: url(images/city2.jpg);
+    height: 200px;
+    width: 80vw;
+    background-size: cover;
+    background-position: 30% 20%;
 }
-
-
-.city {
-    height:250px;
-    border-radius:20% 20% 0% 0%;
-    margin-top:30px;
-    margin-bottom: -15px;
-    padding:5px;
-    box-shadow:-15px -7px rgba(24, 78, 119, 0.8);
-}
-
 
 h1 {
     font-size: 72px;
@@ -53,11 +54,11 @@ h1 {
 }
 
 nav {
-    background-color: rgba(24, 78, 119, 0.9);
+    background-color: rgba(24, 78, 119, 1);
     box-shadow: 0px 6px rgba(24, 78, 119, 0.25);
     grid-area: nav;
-    margin:10px;
-    border-radius:25px 0px 25px 0px;
+    margin-top:-10px;
+    border-radius:0px 0px 25px 25px;
     font-family: "Lilita One", sans-serif;
     font-size: 25px;
     color: rgba(254, 254, 254, 0.9);
@@ -83,7 +84,6 @@ nav {
 
 aside {
     grid-area: aside;
-    border-radius: 20px;
     padding:10px;
     margin-top:25px;
     font-family: "Lilita One", sans-serif;
@@ -96,7 +96,7 @@ aside {
 .lien {
     font-family: 'Lilita One', arial;
     color: #fefefe;
-    letter-spacing: 1.5x;
+    letter-spacing: 1px;
     text-shadow:3px 2px 2px rgba(24, 78, 119, 0.5);
     background: rgba(52, 160, 164, 0.7);
     box-shadow: 0px 6px rgba(24, 78, 119, 0.2);
@@ -159,10 +159,10 @@ footer {
     box-shadow: 0px 6px rgba(24, 78, 119, 0.25);
     grid-area: footer;
     margin:15px;
-    padding:10px;
+    padding:20px;
     border-radius:0px 25px 0px 35px;
-    text-align: center;
-    align-items:baseline;
+    align-items: center;
+    justify-items: center;
 }
 
 .socials {
@@ -173,7 +173,7 @@ footer {
 #parent {
     display: grid;
     grid-template-columns: 1fr 6fr;
-    grid-template-rows: 2fr 1fr 5fr 1fr;
+    grid-template-rows: 1fr 1fr 5fr 1fr;
     grid-template-areas: 
     'header header header header header header header'
     'nav nav nav nav nav nav nav'
