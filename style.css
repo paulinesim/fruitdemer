@@ -86,17 +86,17 @@ aside {
     grid-area: aside;
     padding:10px;
     margin-top:25px;
-    font-family: "Lilita One", sans-serif;
-    font-size: 17px;
-    text-transform:uppercase;
     text-align:left;
     align-content:first baseline;
 }
 
-.lien {
-    font-family: 'Lilita One', arial;
+#lien {
+    display: block;
     color: #fefefe;
-    letter-spacing: 1px;
+    font-family: "Lilita One", sans-serif;
+    text-transform:uppercase;
+    font-size: 14px;
+    letter-spacing: 1.5px;
     text-shadow:3px 2px 2px rgba(24, 78, 119, 0.5);
     background: rgba(52, 160, 164, 0.7);
     box-shadow: 0px 6px rgba(24, 78, 119, 0.2);
@@ -106,7 +106,7 @@ aside {
     text-decoration:none;
 }
 
-.lien:hover {
+#lien:hover {
     background: rgb(9, 51, 83);
     transition: 1s;
 }
@@ -130,7 +130,7 @@ h2 {
     color: rgb(9, 51, 83);
     font-size: 30px;
     font-family: 'Lilita One', arial;
-    letter-spacing:1.5px;
+    letter-spacing:1px;
     text-transform: uppercase;
     font-weight:900;
     text-shadow:3px 2px 2px rgba(24, 78, 119, 0.2);

@@ -5,14 +5,15 @@
         }
 
         header{
-            height:12vh;
+            height:15vh;
             width:auto;
             font-size: xx-large;
         }
 
         nav{
-            line-height: 220%;
+            line-height:220%;
             font-size:medium;
+            margin:0px;
             border-radius: 0px;
 
         }
@@ -23,7 +24,16 @@
         }
 
         aside{
-            display:none;
+            padding:5px;
+            margin:0px;
+            align-content: center;
+            align-items:center;
+        }
+
+        #lien{
+            padding: 5px;
+            font-size:x-small;
+            text-align: center;
         }
 
         main {
@@ -35,7 +45,7 @@
         
         h2 {
             font-size:large;
-            margin:15px 0px 15px 5px;
+            margin:15px 0px 15px 5px;;
         }
         
         h3 {
@@ -50,6 +60,7 @@
 
         footer {
             font-size:x-small;
+            font-weight: bold;
         }
 
         .socials {
@@ -58,13 +69,14 @@
 
         #parent {
             display: grid;
-            grid-template-columns: 7fr;
-            grid-template-rows: 1fr 1fr 5fr 1fr;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 4fr 1fr;
             grid-template-areas: 
-            'header header header header header header header'
-            'nav nav nav nav nav nav nav'
-            'main main main main main main main'
-            'footer footer footer footer footer footer footer';
+            'header'
+            'nav'
+            'aside'
+            'main'
+            'footer';
             height: 100vh;
             text-align: center;
         }
