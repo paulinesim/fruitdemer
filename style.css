@@ -154,6 +154,32 @@ p {
     color:#fefefe;
 }
 
+label{
+    margin: 0px;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: smaller;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+input{
+    width: 250px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    border-radius: 25px;
+    border: 0px;
+}
+
+textarea{
+    width:250px;
+    height:50px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    border-radius: 25px;
+    border: 0px;
+}
+
 footer {
     background-color: rgba(24, 78, 119, 0.9);
     box-shadow: 0px 6px rgba(24, 78, 119, 0.25);
@@ -163,6 +189,20 @@ footer {
     border-radius:0px 25px 0px 35px;
     align-items: center;
     justify-items: center;
+}
+
+button{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 1px;
+    color:#fefefe;
+    font-size: x-small;
+    text-transform: uppercase;
+    font-weight: bold;
+    border:0px;
+    border-radius: 25px;
+    padding: 10px;
+    background: rgba(24, 78, 119, 1);;
+    box-shadow: 0px 5px rgba(24, 78, 119, 0.3);
 }
 
 .socials {
