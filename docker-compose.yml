@@ -1,0 +1,25 @@
+services:
+  web:
+    image: httpd:2.4
+    ports:
+      - "80:80"
+    volumes:
+      - .:/usr/local/apache2/htdocs
+  db:  # Nom du service MySQL
+    image: mysql:latest  # Utilise l'image MySQL la plus récente
+    container_name: fruit-de-mer-guilde  # Nom du conteneur
+    environment:
+      MYSQL_ROOT_PASSWORD: your_password  # Définit le mot de passe root pour MySQL
+      MYSQL_DATABASE: example_db  # Nom de la base de données à créer
+      MYSQL_USER: user  # Utilisateur pour accéder à la base de données
+      MYSQL_PASSWORD: user_password  # Mot de passe de l'utilisateur
+    ports:
+      - "3306:3306"  # Expose le port 3306 pour accéder au serveur MySQL
+    volumes:
+      - ~/.docker/mysql:/var/lib/mysqls
+  myadmin:
+        image: phpmyadmin/phpmyadmin
+        ports:
+            - "8083:80"
+        links:
+            - db:db
